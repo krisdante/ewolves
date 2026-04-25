@@ -68,6 +68,7 @@
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a onclick="scrollToContact()" class="px-8 py-3 bg-white text-slate-900 font-semibold rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all inline-flex items-center justify-center cursor-pointer">Start Your MVP</a>
                 <a href="#faq" class="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center">Learn More</a>
+                <a href="#faq" onclick="document.getElementById('faq-audio').play();" class="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center">▶️ Listen to Podcast</a>
             </div>
         </div>
     </section>
@@ -116,7 +117,7 @@
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-900">What's Included in Your MVP</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900">
+              <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-xl font-bold text-slate-900 mb-6">Workshops & Strategy</h3>
                     <ul class="space-y-4 text-left">
                         <li class="flex items-start">
@@ -137,7 +138,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900">
+                <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-xl font-bold text-slate-900 mb-6">Core Development</h3>
                     <ul class="space-y-4 text-left">
                         <li class="flex items-start">
@@ -158,7 +159,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900">
+                <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-xl font-bold text-slate-900 mb-6">Deployment & Support</h3>
                     <ul class="space-y-4 text-left">
                         <li class="flex items-start">
@@ -185,20 +186,20 @@
     </section>
 
     <!-- Technology Stack Section -->
-    <section class="py-20 md:py-24 px-4 bg-white">
+    <section id="technology-stack" class="py-20 md:py-24 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Modern Technology Stack</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900">
+                <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Business Logic & API</h3>
                     <ul class="space-y-3 text-gray-700">
                         <li class="flex items-start">
                             <span class="text-slate-900 font-bold mr-3">•</span>
-                            <span><strong>Java & Spring Boot</strong> - Enterprise-grade backend</span>
+                            <span><strong>Java & <a href="https://spring.io/projects/spring-boot" target="_blank" class="text-blue-500 hover:underline">Spring Boot</a></strong> - Enterprise-grade backend</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-slate-900 font-bold mr-3">•</span>
-                            <span><strong>PHP & API Platform</strong> - Alternative lightweight solution</span>
+                            <span><strong>PHP & <a href="https://api-platform.com/" target="_blank" class="text-blue-500 hover:underline">API Platform</a></strong> - Alternative lightweight solution</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-slate-900 font-bold mr-3">•</span>
@@ -206,16 +207,16 @@
                         </li>
                     </ul>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900">
+                <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">User Interface</h3>
                     <ul class="space-y-3 text-gray-700">
                         <li class="flex items-start">
                             <span class="text-slate-900 font-bold mr-3">•</span>
-                            <span><strong>React</strong> - Component-based architecture</span>
+                            <span><a href="https://reactjs.org/" target="_blank" class="text-blue-500 hover:underline"><strong>React</strong></a> - Component-based architecture</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-slate-900 font-bold mr-3">•</span>
-                            <span><strong>Next.js</strong> - Server-side rendering & optimization</span>
+                            <span><a href="https://nextjs.org/" target="_blank" class="text-blue-500 hover:underline"><strong>Next.js</strong></a> - Server-side rendering & optimization</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-slate-900 font-bold mr-3">•</span>
@@ -223,7 +224,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900">
+                <div class="bg-slate-50 p-8 rounded-lg border-l-4 border-slate-900 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Deployment & Infrastructure</h3>
                     <ul class="space-y-3 text-gray-700">
                         <li class="flex items-start">
@@ -232,7 +233,7 @@
                         </li>
                         <li class="flex items-start">
                             <span class="text-slate-900 font-bold mr-3">•</span>
-                            <span><strong>Kubernetes</strong> - Orchestration & scaling</span>
+                            <span><a href="https://kubernetes.io/" target="_blank" class="text-blue-500 hover:underline"><strong>Kubernetes</strong></a> - Orchestration & scaling</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-slate-900 font-bold mr-3">•</span>
@@ -240,7 +241,7 @@
                         </li>
                         <li class="flex items-start">
                             <span class="text-slate-900 font-bold mr-3">•</span>
-                            <span><strong>Database</strong> - Postgres or MongoDB, depending on requirements</span>
+                            <span><strong>Database</strong> - <a href="https://www.postgresql.org/" target="_blank" class="text-blue-500 hover:underline">PostgreSQL</a> or <a href="https://www.mongodb.com/" target="_blank" class="text-blue-500 hover:underline">MongoDB</a>, depending on requirements</span>
                         </li>
                     </ul>
                 </div>
@@ -315,129 +316,135 @@
     <section id="faq" class="py-20 md:py-24 px-4 bg-gray-50">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Frequently Asked Questions</h2>
+            <p class="text-center text-gray-600 mb-8">Prefer listening? Check out our FAQ podcast.</p>
+            <audio controls class="block mx-auto mb-8" id="faq-audio">
+                <source src="faq.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
             <div class="space-y-6">
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What is an MVP?</h3>
                     <p class="text-gray-600 leading-relaxed">MVP stands for Minimum Viable Product - the simplest version of your product that can be released to test your idea with real users and gather valuable feedback for future development.</p>
+                    <p class="text-gray-600 leading-relaxed">One picture is worth a thousand words so check this Youtube video <a href="https://www.youtube.com/watch?v=MHqz8oNSraI" target="_blank" class="text-blue-500 hover:underline">What is MVP? Minimum Viable Product Explained with Real Examples</a> by Eleken</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What does ewolv.es mean?</h3>
                     <p class="text-gray-600 leading-relaxed">The name is a wordplay: wolves operate in a focused pack with a strong leader to achieve a shared goal. The group can grow and evolve, and the MVP can do the same — start lean, then evolve into a stronger product as it matures.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What is included in the €10,000 price?</h3>
                     <p class="text-gray-600 leading-relaxed">Everything needed for a complete MVP: professional UI/UX design, full-stack development, database setup, authentication, deployment, basic documentation, and 30 days of support.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What is not included in the fixed price?</h3>
                     <p class="text-gray-600 leading-relaxed">Some projects rely on third-party APIs that charge separately, such as Google Maps or the ChatGPT platform. Payment for those external service usages is the customer’s responsibility and is not covered by the refund policy.</p>
                     <p class="text-gray-600 leading-relaxed">Additionally, services like further development, ongoing maintenance, hosting beyond the initial period, and handover workshops are available as separate packages with fixed pricing and clearly defined scopes. Details on these options are covered in other questions throughout this FAQ.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">How long does it take to build an MVP?</h3>
                     <p class="text-gray-600 leading-relaxed">Typically 4-8 weeks depending on complexity. The process includes discovery, design, development, testing, and deployment phases with regular updates along the way. The actual duration will be determined during the discovery phase, but we're still talking about weeks. Otherwise, it's not viable for either side.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What if I'm not satisfied with the result?</h3>
                     <p class="text-gray-600 leading-relaxed">Full money-back guarantee applies. If the MVP does not satisfy the defined goals, the project is canceled with no charges - your peace of mind is important.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Who can cancel the project?</h3>
                     <p class="text-gray-600 leading-relaxed">In rare cases, if trust or chemistry is missing and both sides cannot align on the same goal, either party may raise the concern. When a project is canceled for those reasons, the full refund policy applies.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Can I make changes during development?</h3>
                     <p class="text-gray-600 leading-relaxed">Absolutely! Regular check-ins allow for feedback and adjustments. Changes are incorporated within the defined scope and timeline to ensure everything meets your vision.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What technologies do you use?</h3>
-                    <p class="text-gray-600 leading-relaxed">Java/Spring Boot or PHP/API Platform for backend, React/Next.js for frontend, Postgres or MongoDB for database, all containerized for Kubernetes deployment - modern and scalable.</p>
+                    <p class="text-gray-600 leading-relaxed">Java/Spring Boot or PHP/API Platform for backend, React/Next.js for frontend, PostgreSQL or MongoDB for database, all containerized for Kubernetes deployment - modern and scalable.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Do you develop mobile apps?</h3>
-                    <p class="text-gray-600 leading-relaxed">Our MVPs are built to support business processes, and mobile apps can be an excellent API consumer for that purpose. We develop mobile apps with frameworks such as React Native to extend your product to mobile users.</p>
+                    <p class="text-gray-600 leading-relaxed">Our MVPs are built to support business processes, and mobile apps can be excellent API consumers for that purpose. We develop mobile apps using frameworks such as React Native to extend your product to mobile users. We do not develop native mobile apps or games.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Do you provide support after launch?</h3>
                     <p class="text-gray-600 leading-relaxed">Yes, 30 days of post-launch support is included. Additional support packages are available for ongoing maintenance. The price for additional work will always be fixed and given upfront.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Who will host the project?</h3>
                     <p class="text-gray-600 leading-relaxed">During the development phase and the included 30 days of support, hosting is provided by ewolv.es. After that period, you'll need to set up your own hosting or opt for our ongoing hosting services, which include monitoring and uptime guarantees. The initial hosting is optimized for MVP-scale usage. For full production deployment, it may need upgrades for higher capacity, high availability, backups, monitoring, and alerting. We can handle these enhancements or mentor your team on implementation.</p>
                     <p class="text-gray-600 leading-relaxed">If not agreed otherwise we will pick AWS (Amazon) or OVH Cloud.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What are the payment terms?</h3>
                     <p class="text-gray-600 leading-relaxed">Just 10% upfront to start development, remaining 90% upon successful completion and delivery. No charges if goals are not met - simple and fair.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">How is payment handled?</h3>
                     <p class="text-gray-600 leading-relaxed">You receive two EU VAT invoices: the first for €1,000 as advance payment and the second for €9,000 upon completion. These prices exclude VAT. If the money-back policy is applied, the advance payment invoice is corrected and the funds are refunded.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Will I get source code?</h3>
                     <p class="text-gray-600 leading-relaxed">Yes, but not from day one. Source code is provided once the MVP is accepted and payment is complete. Source code can be audited beforehand by any tool for static code analysis, and can be presented to auditors during live sessions. This protects the work while offering full money-back guarantee.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Can you work with my existing designs or team?</h3>
                     <p class="text-gray-600 leading-relaxed">Definitely! Existing designs can be incorporated seamlessly. Collaboration with your team is always welcome for the best results.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What if I need additional features later?</h3>
                     <p class="text-gray-600 leading-relaxed">The MVP is built to scale beautifully. Additional features can be developed as separate projects with clear pricing and timelines.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What does it mean that MVP has scale in mind?</h3>
                     <p class="text-gray-600 leading-relaxed">During the initial workshops, the right architectural design fit is identified. At this point every business scope is defined and for each scope the appropriate approach (from CRUD to Hexagonal Architecture) is assigned. The whole code is covered with automated tests so further development with continuous integration is possible.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Are you sure every project can be done within 10k?</h3>
                     <p class="text-gray-600 leading-relaxed">Not every project, but that's okay! Very large projects might not fit the budget but also won't fit the MVP definition. Requirements are analyzed and in case of very large scope, helpful MVP scope suggestions are provided.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Do you use AI in development?</h3>
                     <p class="text-gray-600 leading-relaxed">AI tools like GitHub Copilot support development, but the final code is always reviewed by an expert. No tools that generate whole applications are used - quality and expertise come first.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Do you realize AI projects?</h3>
                     <p class="text-gray-600 leading-relaxed">Yes, popular AI models and services can be integrated to support your MVP's business goals. However, you must cover usage costs extra. The rest of the development is included in the fixed price.</p>
                     <p class="text-gray-600 leading-relaxed">Note that projects requiring custom model training are not feasible within this budget.</p>
                     <p class="text-gray-600 leading-relaxed">For example, we can build a ChatGPT-powered application using the ChatGPT API, but we cannot train and deploy a custom large language model like ChatGPT itself.</p>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Which tools are used for communication?</h3>
-                    <p class="text-gray-600 leading-relaxed">Atlassian tools like Jira and Confluence are used for project transparency, unless agreed otherwise. Online meeting tools like Google Meet or Teams are suggested for smooth collaboration.</p>
+                    <p class="text-gray-600 leading-relaxed">Atlassian tools like <a href="https://www.atlassian.com/software/jira" target="_blank" class="underline hover:text-navy transition-colors">Jira</a> and <a href="https://www.atlassian.com/software/confluence" target="_blank" class="underline hover:text-navy transition-colors">Confluence</a> are used for project transparency, unless agreed otherwise. Online meeting tools like Google Meet or Microsoft Teams are suggested for smooth collaboration.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What is handover strategy?</h3>
                     <p class="text-gray-600 leading-relaxed">After MVP phase the code can be further developed also by another team. Additional workshops for handover or even dedicated mentoring programs can be organized. Those are additionally paid.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Does the price include meetings costs?</h3>
                     <p class="text-gray-600 leading-relaxed">It is assumed that all workshops will be done online and no onsite visit is required. But onsite visit is possible if customer will cover all the costs (no refunds policy is applied here).</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">What is not refundable?</h3>
                     <p class="text-gray-600 leading-relaxed">In rare cases, when technical decisions made by you require purchasing licenses for libraries or extensions, these expenses are covered by the initial payment and are not refundable. However, no margin is added, and full transparency on costs is provided.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Isn't €10,000 a bit high price?</h3>
                     <p class="text-gray-600 leading-relaxed">No, it is not. It represents the average monthly salary of an expert developer in most EU countries. Additionally, consider the costs of adding a Project Manager, Architect, UX Designer, and margin on top, and multiply this by months of development.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">Isn't the €10,000 price too low?</h3>
                     <p class="text-gray-600 leading-relaxed">No, it is not. The fixed price enables fast time to market. The combination of AI support and over 20 years of market experience is a powerful acceleration tool.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">I have a unique idea. Is it safe?</h3>
                     <p class="text-gray-600 leading-relaxed">Short answer: yes. An NDA will be signed to ensure the idea cannot be taken and developed independently. Additionally, this is not our business model—we lack the marketing capabilities to launch and run the project. That said, remember that truly unique ideas are rare. Most projects are clones of something with a small twist.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">€10,000, how much is it in US dollars?</h3>
                     <p class="text-gray-600 leading-relaxed">Around $11,800. For US-based customers the rate is simplified to a fixed $11,000.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
                     <h3 class="text-lg font-semibold text-slate-900 mb-3">How do we get started?</h3>
                     <p class="text-gray-600 leading-relaxed">Contact for a friendly initial consultation. Define your goals, timeline, and requirements together. Start development within 1-2 weeks - let's bring your idea to life!</p>
                 </div>
@@ -467,11 +474,11 @@
     <section id="contact" class="py-20 md:py-24 px-4 bg-gradient-to-r from-slate-900 to-blue-900 text-white text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Build Your MVP?</h2>
         <p class="text-lg md:text-xl mb-8 opacity-95">Let's turn your idea into reality. €10,000. Fixed price. Quick turnaround.</p>
+        <p class="text-slate-300 mb-8">Just drop an email at <a href="mailto:howl@ewolv.es" class="underline hover:text-white transition-colors">howl@ewolv.es</a> with your contact preferences, and we will reach out to you. Don't forget to add a one-liner about your project.</p>        
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="mailto:howl@ewolv.es?subject=Start%20Your%20MVP%20Development" class="px-8 py-3 bg-white text-slate-900 font-semibold rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all inline-flex items-center justify-center">Start Now</a>
             <a href="mailto:howl@ewolv.es" class="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all inline-flex items-center justify-center">Contact Us</a>            
-        </div>
-        <p class="text-sm text-slate-300 mt-6">If buttons aren't working, send an email to <a href="mailto:howl@ewolv.es" class="underline hover:text-white transition-colors">howl@ewolv.es</a></p>
+        </div>        
     </section>
 
     <!-- Footer -->
